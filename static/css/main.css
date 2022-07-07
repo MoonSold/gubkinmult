@@ -1,0 +1,49 @@
+img {
+    object-fit: cover; 
+    max-width: 100%;;
+}
+
+.btn-secondary{
+    color: whitesmoke;
+    background: black;
+    border-radius: 0%;
+}
+
+.btn-group{
+    width: 100%;
+}
+
+header{
+    background-color: black;
+}
+
+#auth{
+    position: absolute;
+    color: black;
+    right: 8%;
+    top: 0%;
+    font-weight: 500;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+#register{
+    position: absolute;
+    color: black;
+    right: 0%;
+    top: 0%;
+    font-weight: 500;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+
+    
