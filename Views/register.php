@@ -15,14 +15,18 @@
 <?php require_once 'header.php'?>
     <div>
     <div>
-        <form id = 'form-cont'>
+        <form id = 'form-cont' action = 'newuser' method="post">
             <div class="mb-3 mt-4">
-                <label for="exampleInputEmail1" class="form-label">Введите логин</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputEmail1" class="form-label">Введите email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name = 'email'>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Введите имя пользователя</label>
+                <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name='username'>
             </div>
             <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Пароль</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <input type="password" class="form-control" id="exampleInputPassword1" name = 'password'>
             </div>
             <button type="submit" class="btn btn-primary">Зарегестрироваться</button>
         </form>
