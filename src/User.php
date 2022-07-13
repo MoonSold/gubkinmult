@@ -13,14 +13,18 @@ class User
      * @ORM\GeneratedValue
      */
     private $id;
-        /**
-     * @ORM\Column(type="string")
+    /**
+     * @ORM\Column(type="string",nullable = true)
      */
     private $username;
-        /**
-     * @ORM\Column(type="string")
+    /**
+     * @ORM\Column(type="string",nullable = true)
      */
     private $passwordHash;
+    /**
+     * @ORM\Column(type="string",nullable = true)
+     */
+    private $email;
 
     public function getUsername(): string
     {
@@ -40,6 +44,16 @@ class User
     public function setPasswordHash(string $passwordHash): void
     {
         $this->passwordHash = $passwordHash;
+    }
+
+    public function getEmail(): string
+    {
+        return $this->email;
+    }
+
+    public function setEmail(string $email): void
+    {
+        $this->email = $email;
     }
 
 }
