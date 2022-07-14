@@ -1,10 +1,10 @@
 <?php 
-use App\service\Router;
+use App\service\RouterClass;
 
-Router::page($url='/',$page_name='main');
-Router::page($url='/film',$page_name='film');
-Router::page($url='/login',$page_name='login');
-Router::page($url='/register',$page_name='register');
-Router::page($url='/newuser',$page_name='newuser');
-Router::page($url='/auth',$page_name='auth');
-Router::enable();
+RouterClass::page($url='/',$page_name='main');
+RouterClass::page($url='/film',$page_name='film');
+RouterClass::page($url='/login',$page_name='login');
+RouterClass::page($url='/register',$page_name='register');
+RouterClass::page($url='/newuser',$page_name='newuser');
+RouterClass::page($url='/auth',$page_name='auth');
+RouterClass::enable();

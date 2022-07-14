@@ -1,7 +1,10 @@
 <?php 
-use App\service\auth;
-if(isset($_POST["name"]) && isset($_POST["pas"]));
-    auth::get_post($_POST["name"],$_POST["pas"]);
+
+use App\service\AuthUserClass;
+
+if(isset($_POST["name"]) && isset($_POST["password"]))
+    AuthUserClass::doAuthUser($_POST["name"],$_POST["password"]);
+    
 ?>
 
 
